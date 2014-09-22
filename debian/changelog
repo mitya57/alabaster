@@ -1,0 +1,7 @@
+alabaster (0.6.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.6.1
+  * Initial release
+  * Add lintian overrides for layout template file
+
+ -- Jeremy T. Bouse <jbouse@debian.org>  Mon, 22 Sep 2014 14:38:33 -0400
