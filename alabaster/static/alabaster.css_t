@@ -9,6 +9,11 @@
 {% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
 {% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
 
+{% set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
+{% set theme_warn_border = theme_warn_border or theme_pink_2 %}
+
+{% set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
+
 {% set theme_narrow_sidebar_link = theme_narrow_sidebar_link or theme_gray_3 %}
 {% set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
 
@@ -18,7 +23,7 @@
 /* -- page layout ----------------------------------------------------------- */
 
 body {
-    font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro';
+    font-family: {{ theme_font_family }};
     font-size: 17px;
     background-color: white;
     color: #000;
@@ -108,11 +113,12 @@ div.sphinxsidebarwrapper h1.logo-name {
 
 div.sphinxsidebarwrapper p.blurb {
     margin-top: 0;
+    font-style: {{ theme_description_font_style }};
 }
 
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: {{ theme_head_font_family }};
     color: {{ theme_sidebar_header }};
     font-size: 24px;
     font-weight: normal;
@@ -156,7 +162,7 @@ div.sphinxsidebar ul li.toctree-l2 > a {
 
 div.sphinxsidebar input {
     border: 1px solid {{ theme_sidebar_search_button }};
-    font-family: 'Georgia', serif;
+    font-family: {{ theme_font_family }};
     font-size: 1em;
 }
 
@@ -189,7 +195,7 @@ div.body h3,
 div.body h4,
 div.body h5,
 div.body h6 {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: {{ theme_head_font_family }};
     font-weight: normal;
     margin: 30px 0px 10px 0px;
     padding: 0;
@@ -220,6 +226,8 @@ div.body p, div.body dd, div.body li {
 div.admonition {
     margin: 20px 0px;
     padding: 10px 30px;
+    background-color: {{ theme_warn_bg }};
+    border: 1px solid {{ theme_warn_border }};
 }
 
 div.admonition tt.xref, div.admonition a tt {
@@ -232,7 +240,7 @@ dd div.admonition {
 }
 
 div.admonition p.admonition-title {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: {{ theme_head_font_family }};
     font-weight: normal;
     font-size: 24px;
     margin: 0 0 10px 0;
@@ -258,8 +266,8 @@ div.note {
 }
 
 div.seealso {
-    background-color: #ffc;
-    border: 1px solid #ff6;
+    background-color: {{ theme_seealso_bg }};
+    border: 1px solid {{ theme_seealso_border }};
 }
 
 div.topic {
@@ -274,19 +282,19 @@ p.admonition-title:after {
     content: ":";
 }
 
-pre, tt {
-    font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
-    font-size: 0.9em;
+pre, tt, code {
+    font-family: {{theme_code_font_family}};
+    font-size: {{ theme_code_font_size }};
 }
 
 img.screenshot {
 }
 
-tt.descname, tt.descclassname {
+tt.descname, tt.descclassname, code.descname, code.descclassname {
     font-size: 0.95em;
 }
 
-tt.descname {
+tt.descname, code.descname {
     padding-right: 0.08em;
 }
 
@@ -381,13 +389,13 @@ dl dl pre {
     padding-left: 90px;
 }
 
-tt {
+tt, code {
     background-color: #ecf0f3;
     color: #222;
     /* padding: 1px 2px; */
 }
 
-tt.xref, a tt {
+tt.xref, code.xref, a tt {
     background-color: #FBFBFB;
     border-bottom: 1px solid white;
 }
@@ -412,7 +420,7 @@ a.footnote-reference:hover {
     border-bottom: 1px solid {{ theme_link_hover }};
 }
 
-a:hover tt {
+a:hover tt, a:hover code {
     background: #EEE;
 }
 
@@ -571,4 +579,9 @@ a:hover tt {
  */
 div#changelog > div.section > ul > li > p:only-child {
     margin-bottom: 0;
+}
+
+/* Hide fugly table cell borders in ..bibliography:: directive output */
+table.docutils.citation, table.docutils.citation td, table.docutils.citation th {
+  border:none;
 }
