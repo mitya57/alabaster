@@ -15,7 +15,7 @@ Source: https://github.com/bitprophet/alabaster
 
 Files:     MANIFEST.in
            LICENSE
-           README.md
+           README.rst
            alabaster/__init__.py
            alabaster/_version.py
            alabaster/about.html
