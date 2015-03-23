@@ -1,3 +1,11 @@
+alabaster (0.7.2-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.7.2 (Closes: #780345)
+  * Update Standards-Version (no changes needed)
+  * README.md renamed to README.rst upstream
+
+ -- Jeremy T. Bouse <jbouse@debian.org>  Thu, 12 Mar 2015 22:22:27 -0400
+
 alabaster (0.6.1-1) unstable; urgency=medium
 
   * Imported Upstream version 0.6.1
