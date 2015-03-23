@@ -1,3 +1,9 @@
+alabaster (0.7.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.7.3
+
+ -- Jeremy T. Bouse <jbouse@debian.org>  Sun, 22 Mar 2015 23:54:17 -0400
+
 alabaster (0.7.2-1) unstable; urgency=medium
 
   * Imported Upstream version 0.7.2 (Closes: #780345)
