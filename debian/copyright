@@ -22,10 +22,13 @@ Files:     MANIFEST.in
            alabaster/donate.html
            alabaster/layout.html
            alabaster/navigation.html
+           alabaster/relations.html
            alabaster/static/alabaster.css_t
            alabaster/support.py
            alabaster/theme.conf
            setup.py
+           tasks.py
+           dev-requirements.txt
 Copyright: 2014, Jeff Forcier <jeff@bitprophet.org>
 License:   BSD-3-clause
  Copyright (c) 2014 Jeff Forcier.
