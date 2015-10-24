@@ -18,7 +18,8 @@ X-Python3-Version: >= 3.2
 
 Package: python-alabaster
 Architecture: all
-Depends: python-sphinx, ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
+Suggests: python-sphinx
 Provides: ${python:Provides}
 Description: Configurable sidebar-enabled Sphinx theme (Python 2)
  This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially
@@ -29,7 +30,8 @@ Description: Configurable sidebar-enabled Sphinx theme (Python 2)
 
 Package: python3-alabaster
 Architecture: all
-Depends: python3-sphinx, ${misc:Depends}, ${shlibs:Depends}, ${python3:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python3:Depends}
+Suggests: python3-sphinx
 Provides: ${python3:Provides}
 Description: Configurable sidebar-enabled Sphinx theme (Python 3)
  This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially
