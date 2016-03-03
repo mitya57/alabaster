@@ -1,3 +1,11 @@
+alabaster (0.7.7-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.7.7
+  * Update debian/copyright for setup.cfg
+  * Update debian/watch to use pypi.debian.net
+
+ -- Jeremy T. Bouse <jbouse@debian.org>  Thu, 03 Mar 2016 09:58:46 -0500
+
 alabaster (0.7.6-2) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
