@@ -27,6 +27,7 @@ Files:     MANIFEST.in
            alabaster/support.py
            alabaster/theme.conf
            setup.py
+           setup.cfg
            tasks.py
            dev-requirements.txt
 Copyright: 2014, Jeff Forcier <jeff@bitprophet.org>
