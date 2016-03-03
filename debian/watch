@@ -1,8 +1,3 @@
-# watch control file for uscan
-
-# See uscan(1) for how to set this file properly
-#  * uupdate(1) for upgrade a source code package
-#  * gbp-import-orig(1) with --uscan for upgrade GIT repo
-
 version=3
-https://github.com/bitprophet/alabaster/tags .*/(\d[\d\.]*)\.(?:tar.gz|tar.bz2|tar.xz)
+opts=uversionmangle=s/(rc|a|b|c)/~$1/ \
+https://pypi.debian.net/alabaster/alabaster-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
