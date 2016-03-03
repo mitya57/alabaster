@@ -1,3 +1,14 @@
+alabaster (0.7.6-2) unstable; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Demote sphinx from Depends to Suggests. (Closes: #783794)
+  * Set priority to optional.
+
+  [ Jeremy T. Bouse ]
+  * Upgrade Standards-Version to 3.9.7 no changes needed
+
+ -- Jeremy T. Bouse <jbouse@debian.org>  Wed, 02 Mar 2016 19:18:51 -0500
+
 alabaster (0.7.6-1) unstable; urgency=medium
 
   * Imported Upstream version 0.7.6
