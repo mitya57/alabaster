@@ -8,17 +8,18 @@ Build-Depends: debhelper (>=9),
                python-setuptools,
                python3-all,
                python3-setuptools
-Standards-Version: 3.9.7
+Standards-Version: 3.9.8
 Homepage: https://github.com/bitprophet/alabaster
 Vcs-Git: https://github.com/jbouse-debian/alabaster.git
 Vcs-Browser: https://github.com/jbouse-debian/alabaster
 X-Python-Version: >= 2.6
 X-Python3-Version: >= 3.2
 
-
 Package: python-alabaster
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends}
 Suggests: python-sphinx
 Provides: ${python:Provides}
 Description: Configurable sidebar-enabled Sphinx theme (Python 2)
@@ -30,7 +31,9 @@ Description: Configurable sidebar-enabled Sphinx theme (Python 2)
 
 Package: python3-alabaster
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}, ${python3:Depends}
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends}
 Suggests: python3-sphinx
 Provides: ${python3:Provides}
 Description: Configurable sidebar-enabled Sphinx theme (Python 3)
