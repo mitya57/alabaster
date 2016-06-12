@@ -16,20 +16,11 @@ Source: https://github.com/bitprophet/alabaster
 Files:     MANIFEST.in
            LICENSE
            README.rst
-           alabaster/__init__.py
-           alabaster/_version.py
-           alabaster/about.html
-           alabaster/donate.html
-           alabaster/layout.html
-           alabaster/navigation.html
-           alabaster/relations.html
-           alabaster/static/alabaster.css_t
-           alabaster/support.py
-           alabaster/theme.conf
+           PKG-INFO
+           alabaster/*
+           alabaster.egg-info/*
            setup.py
            setup.cfg
-           tasks.py
-           dev-requirements.txt
 Copyright: 2014, Jeff Forcier <jeff@bitprophet.org>
 License:   BSD-3-clause
  Copyright (c) 2014 Jeff Forcier.
