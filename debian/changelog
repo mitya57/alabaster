@@ -1,3 +1,12 @@
+alabaster (0.7.8-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.7.8
+  * Update Standards-Version (no changes needed)
+  * Update Priority to match override
+  * Update debian/copyright file references
+
+ -- Jeremy T. Bouse <jbouse@debian.org>  Sat, 11 Jun 2016 23:18:07 -0400
+
 alabaster (0.7.7-1) unstable; urgency=medium
 
   * Imported Upstream version 0.7.7
