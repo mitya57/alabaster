@@ -1,3 +1,10 @@
+alabaster (0.7.8-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop python2 support; Closes: #936114
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 27 Mar 2020 23:22:09 -0400
+
 alabaster (0.7.8-1) unstable; urgency=medium
 
   * Imported Upstream version 0.7.8
