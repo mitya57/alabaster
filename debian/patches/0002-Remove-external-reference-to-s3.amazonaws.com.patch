@@ -1,0 +1,22 @@
+From: "Jeremy T. Bouse" <jbouse@debian.org>
+Date: Sun, 13 Jun 2021 15:08:28 -0400
+Subject: Remove external reference to s3.amazonaws.com
+
+Forwarded: not-needed
+---
+ alabaster/layout.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/alabaster/layout.html b/alabaster/layout.html
+index 0885d03..584f51e 100644
+--- a/alabaster/layout.html
++++ b/alabaster/layout.html
+@@ -101,7 +101,7 @@
+ 
+     {% if theme_github_banner|lower != 'false' %}
+     <a href="https://github.com/{{ theme_github_user }}/{{ theme_github_repo }}" class="github">
+-        <img style="position: absolute; top: 0; right: 0; border: 0;" src="{{ pathto('_static/' ~ theme_github_banner, 1) if theme_github_banner|lower != 'true' else 'https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png' }}" alt="Fork me on GitHub"  class="github"/>
++        <img style="position: absolute; top: 0; right: 0; border: 0;" src="{{ pathto('_static/' ~ theme_github_banner, 1) if theme_github_banner|lower != 'true' else pathto('_static/forkme_right_darkblue_121621.png', 1) }}" alt="Fork me on GitHub"  class="github"/>
+     </a>
+     {% endif %}
+ 
