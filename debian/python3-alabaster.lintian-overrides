@@ -1,0 +1,8 @@
+privacy-breach-google-adsense usr/lib/python3/dist-packages/alabaster/layout.html (choke on: '.google-analytics.com/ga.js')
+privacy-breach-generic usr/lib/python3/dist-packages/alabaster/about.html *
+privacy-breach-generic usr/lib/python3/dist-packages/alabaster/donate.html *
+package-contains-documentation-outside-usr-share-doc usr/lib/python3/dist-packages/alabaster/about.html
+package-contains-documentation-outside-usr-share-doc usr/lib/python3/dist-packages/alabaster/donate.html
+package-contains-documentation-outside-usr-share-doc usr/lib/python3/dist-packages/alabaster/layout.html
+package-contains-documentation-outside-usr-share-doc usr/lib/python3/dist-packages/alabaster/navigation.html
+package-contains-documentation-outside-usr-share-doc usr/lib/python3/dist-packages/alabaster/relations.html
