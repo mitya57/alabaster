@@ -1,0 +1,24 @@
+From: "Jeremy T. Bouse" <jbouse@debian.org>
+Date: Sun, 13 Jun 2021 14:17:07 -0400
+Subject: Ensure determinstic dict ordering to ensure builds are reproducible.
+
+See https://reproducible-builds.org/
+
+Signed-off-by: Chris Lamb <chris@chris-lamb.co.uk>
+---
+ alabaster/navigation.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/alabaster/navigation.html b/alabaster/navigation.html
+index 760dcc9..f854061 100644
+--- a/alabaster/navigation.html
++++ b/alabaster/navigation.html
+@@ -3,7 +3,7 @@
+ {% if theme_extra_nav_links %}
+ <hr />
+ <ul>
+-    {% for text, uri in theme_extra_nav_links.items() %}
++    {% for text, uri in theme_extra_nav_links.items()|sort %}
+     <li class="toctree-l1"><a href="{{ uri }}">{{ text }}</a></li>
+     {% endfor %}
+ </ul>
