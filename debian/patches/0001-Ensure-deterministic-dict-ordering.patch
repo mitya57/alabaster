@@ -1,6 +1,7 @@
 From: "Jeremy T. Bouse" <jbouse@debian.org>
 Date: Sun, 13 Jun 2021 14:17:07 -0400
-Subject: Ensure determinstic dict ordering to ensure builds are reproducible.
+Subject: Ensure deterministic dict ordering to ensure builds are
+ reproducible.
 
 See https://reproducible-builds.org/
 
