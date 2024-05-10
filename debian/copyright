@@ -13,16 +13,10 @@ Source: https://github.com/sphinx-doc/alabaster
 # Please avoid to pick license terms that are more restrictive than the
 # packaged work, as it may make Debian's contributions unacceptable upstream.
 
-Files:     MANIFEST.in
-           README.rst
-           PKG-INFO
-           alabaster/*
-           alabaster.egg-info/*
-           setup.py
-           setup.cfg
-Copyright: 2014, Jeff Forcier <jeff@bitprophet.org>
+Files:     *
+Copyright: 2020, Jeff Forcier <jeff@bitprophet.org>
 License:   BSD-3-clause
- Copyright (c) 2014 Jeff Forcier.
+ Copyright (c) 2020 Jeff Forcier.
  .
  Based on original work copyright (c) 2011 Kenneth Reitz and copyright (c) 2010
  Armin Ronacher.
