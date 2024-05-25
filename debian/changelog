@@ -1,3 +1,31 @@
+alabaster (0.7.16-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Debian Janitor ]
+  * Update lintian override info format in d/python3-alabaster.lintian-
+    overrides on line 4-8.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 12 to 13.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-
+    Browse.
+  * Update standards version to 4.6.2, no changes needed.
+  * Set upstream metadata fields: Repository.
+
+  [ Dmitry Shachnev ]
+  * New upstream version 0.7.16. (Closes: #1069759)
+  * Stop validating tarball signatures, PyPI no longer supports them.
+  * Build-depend on flit and pybuild-plugin-pyproject instead of
+    setuptools.
+  * Update GitHub links for the new repository owner (sphinx-doc).
+  * Bump year in debian/copyright and use a wildcard for all files.
+  * Update 0002 patch for upstream switch to github.blog.
+  * Update debian/python3-alabaster.lintian-overrides for pointed hints.
+  * Fix spelling-error-in-patch-description warning about 0001 patch.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sat, 25 May 2024 21:17:17 +0300
+
 alabaster (0.7.12-1) unstable; urgency=medium
 
   * Make the output reproducible.
